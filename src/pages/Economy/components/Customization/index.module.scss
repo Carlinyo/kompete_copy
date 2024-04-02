@@ -1,0 +1,13 @@
+.ElementsContaner, .CustomizationContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    background: #000;
+    overflow: hidden;
+}
+
+@media (max-width: 540px) {
+    .ElementsContaner {
+        gap: 80px;
+    }
+}

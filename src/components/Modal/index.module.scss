@@ -1,0 +1,30 @@
+.ModalContainer {
+    background: rgba(12, 13, 23, 0.90);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ModalDetails {
+    position: relative;
+    padding: 60px 40px 32px 40px;
+}
+
+.CloseIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.sm {
+    width: 560px;
+    min-height: 652px;
+}

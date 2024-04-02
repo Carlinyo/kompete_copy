@@ -1,0 +1,104 @@
+.Container {
+    background: rgba(0, 0, 0, 0.95);
+    
+}
+
+.UserInfoContainer {
+    background: #141414;
+    padding: 12px 48px 12px 20px;
+    gap: 20px;
+    div {
+        color: #F8F3E9;
+    } 
+    &Details, &DetailsItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &Details {
+      justify-content: space-between;
+      gap: 10px;
+      &Items {
+        gap: 20px;
+      }
+    }
+}
+
+.BalanceText {
+  font-size: 10px;
+}
+
+.links {
+    width: 100%;
+    justify-content: center;
+    a {
+        color: #F8F3E9;
+        text-transform: uppercase;
+        transition: .5s;
+        font-weight: 700;
+        &:hover {
+            color: #FF2F37;
+        }
+    }
+}
+
+.NavbarContainer {
+    min-height: 80px;
+    gap: 3%;
+    padding-left: 48px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99999999;
+    background: rgba(0, 0, 0, 0.95);
+}
+
+.LineContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80px;
+    padding: 0 20px;
+    .line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 4px;
+    }
+}
+
+.MobileMenu {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    gap: 15px;
+}
+
+.MenuIcon, .SignInButton {
+    display: none;
+}
+
+.MenuIcon {
+    cursor: pointer;
+}
+
+// .SignInButton {
+//     width: 85px;
+//     button {
+//         width: 100%;
+//     }
+// }
+
+@media (max-width: 1400px) {
+    .links, .UserInfoContainer {
+        display: none;
+    }
+    .MenuIcon {
+        display: block;
+    }
+}

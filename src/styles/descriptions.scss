@@ -1,0 +1,54 @@
+.small-description {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.52px;
+    text-transform: uppercase;
+    color: #525252;
+}
+
+.footer-description {
+    color: rgba(255, 255, 255, 0.30);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.footer-small-description {
+    color: #9C9C9C;
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+}
+
+.link-text {
+    color: #525252;
+    text-align: center;
+    text-decoration-line: underline;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.message-text {
+    color: #525252;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.big-description {
+    color: #F8F3E9;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 32px
+}
+
+@media (max-width: 1024px) {
+    .message-text {
+        font-size: 10px;
+    }
+}

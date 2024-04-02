@@ -1,0 +1,123 @@
+.Container {
+    background: #000000;
+    padding-top: 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    overflow: hidden;
+    .Line {
+        margin-bottom: 64px;
+    }
+}
+
+.Item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 162px;
+    gap: 68px;
+}
+
+.Details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    min-width: 423px;
+    width: min-content;
+    div {
+        text-align: left;
+    }
+}
+
+.ItemsContainer {
+    width: 100%;
+}
+
+.Transparent {
+    flex-direction: row-reverse;
+    background: transparent;
+    height: 500px;
+}
+
+.Red {
+    background: radial-gradient(76.93% 82.44% at 68.75% 96.14%, rgba(255, 47, 55, 0.18) 0%, rgba(255, 47, 55, 0.00) 97.48%), radial-gradient(49.68% 45.1% at 44.1% 4.92%, rgba(255, 47, 55, 0.40) 0%, rgba(255, 47, 55, 0.00) 100%);
+    height: 376px;
+}
+
+.Image1 {
+    width: 558px;
+    height: 497px;
+}
+
+.Image2 {
+    width: 449px;
+    height: 419px;
+}
+
+.Image3 {
+    width: 365px;
+    height: 440px;
+    margin-top: 65px;
+}
+
+.Image4 {
+    width: 372px;
+    height: 409px;
+}
+
+.Image5 {
+    width: 612px;
+    height: 344px;
+}
+
+@media (max-width: 1024px) {
+    .Item {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 24px;
+        padding: 0;
+        height: 520px;
+        .Image1 {
+            width: 264px;
+            height: 235px;
+        }
+        .Image2 {
+            width: 251px;
+            height: 233px;
+        }
+        .Image3 {
+            width: 190px;
+            height: 229px;
+        }
+        .Image4 {
+            width: 212px;
+            height: 234px;
+        }
+        .Image5 {
+            width: 326.5px;
+            height: 194px;
+        }
+    }
+    .Details {
+        min-width: 100%;
+        padding: 0 24px;
+    }
+    .Transparent {
+        .Image {
+            background: radial-gradient(53.73% 52.2% at 51.99% 94.58%, rgba(160, 160, 160, 0.18) 0%, rgba(255, 255, 255, 0.00) 97.48%);
+        }
+    }
+    .ItemsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .Red {
+        background: unset !important;
+        .Image {
+            background: radial-gradient(76.93% 82.44% at 68.75% 96.14%, rgba(255, 47, 55, 0.18) 0%, rgba(255, 47, 55, 0.00) 97.48%), radial-gradient(49.68% 45.1% at 44.1% 4.92%, rgba(255, 47, 55, 0.40) 0%, rgba(255, 47, 55, 0.00) 100%);
+        }
+    }
+}

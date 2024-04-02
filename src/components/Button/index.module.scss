@@ -1,0 +1,82 @@
+.CustomButton {
+    display: flex;
+    height: 56px;
+    padding: 18px 8px 20px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border: none;
+    cursor: pointer;
+}
+
+.red-button, .how-to-buy-button {
+    background: linear-gradient(90deg, #F51919 0.03%, #770001 99.8%);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #F8F3E9;
+}
+
+.red-button-border {
+    border: 1px solid #FF2F37;
+    background: transparent;
+    display: flex;
+    padding: 16px 8px 18px 8px;
+    justify-content: center;
+    align-items: center;
+    color: #FF2F37;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.green-button {
+    border-radius: 100px;
+    background: #26BA6A;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #fff;
+    height: 40px;
+    padding: 15px 19px 16px 19px;
+}
+
+.white-btn, .bold-white-btn {
+    background: #FFF;
+    padding: 12px 8px 10px 8px;
+}
+
+.white-btn {
+    height: 32px;
+}
+
+.bold-white-btn {
+    width: 100%;
+    min-height: 56px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .red-button, .how-to-buy-button {
+        font-size: 9px;
+        font-weight: 800;
+        max-height: 32px !important;
+    }
+    .how-to-buy-button {
+        width: 100px !important;
+    }
+    .green-button {
+        max-height: 38px;
+    }
+    .bold-white-btn {
+        font-size: 14px;
+    }
+}

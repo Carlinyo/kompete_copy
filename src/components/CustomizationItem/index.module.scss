@@ -1,0 +1,73 @@
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 88px;
+    width: 100%;
+}
+
+.TitleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 40%;
+}
+
+.Image {
+    width: 50%;
+}
+
+.Left {
+    flex-direction: row-reverse;
+}
+
+.Right {
+    flex-direction: row;
+}
+
+.video-item {
+    align-items: flex-start;
+    padding-left: 162px;
+}
+
+.cosmetics-item {
+    padding-right: 162px;
+}
+
+.parties-item {
+    padding-left: 162px;
+    padding-right: 158px;
+    .Image {
+        width: 494px;
+        height: 178px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 24px;
+        padding: 0;
+        div {
+            text-align: left;
+        }
+    }
+    .TitleContainer {
+        width: 50%;
+    }
+}
+
+@media (max-width: 540px) {
+    .Container {
+        padding: 0 24px;
+    }
+    .TitleContainer, .Image {
+        width: 100% !important;   
+    }
+    .parties-item {
+        .Image {
+            height: 110px;
+        }
+    }
+}

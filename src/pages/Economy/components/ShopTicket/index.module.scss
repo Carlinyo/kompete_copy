@@ -1,0 +1,46 @@
+.ShopTicketContainer {
+    background: url(../../../../../public/images/Economy/ShopTicket/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 84px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.ElementsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0 190px;
+    margin-top: 20px;
+}
+
+.ElementContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    img {
+        width: 216px;
+        height: 216px;
+    }
+    div { 
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ElementsContainer {
+        flex-direction: column;
+        .ElementContainer {
+            gap: 24px;
+            img {
+                width: 212px;
+                height: 212px;
+            }
+        }
+    }
+}

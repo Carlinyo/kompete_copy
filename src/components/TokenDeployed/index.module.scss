@@ -1,0 +1,53 @@
+.ElementContainer {
+    padding: 15px;
+    width: 344px;
+    height: 140px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.00);
+    &:hover {
+        border: 1px solid rgba(255, 47, 55, 0.00);
+        background: radial-gradient(88.65% 93.12% at 11.05% 100%, rgba(176, 44, 44, 0.17) 0%, rgba(176, 44, 44, 0.00) 100%), rgba(255, 255, 255, 0.05)
+    }
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 32px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 82.28%, #000 112.41%), linear-gradient(0deg, rgba(0, 0, 0, 0.05) 50.84%, #000 112.9%), rgba(0, 0, 0, 0.80);
+}
+
+.ElementsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+@media (max-width: 1024px) {
+    .ElementsContainer {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .ElementContainer {
+        width: 327px;
+        height: 116px;
+        .image {
+            height: 100%;
+        }
+    }
+    .Container {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 540px) {
+    .Container {
+        padding-top: 40%;
+    }
+    .Title {
+        width: 95%;
+    }
+}

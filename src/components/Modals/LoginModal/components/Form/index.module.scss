@@ -1,0 +1,49 @@
+.FormContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.Checkbox {
+    height: 24px;
+    width: 24px;
+}
+
+.ActiveCheckbox {
+    background: #00906B;
+}
+
+.DisabledCheckbox {
+    background: white;
+}
+
+.TitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Terms {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 24px 0;
+}
+
+.TermsContainer {
+    display: flex;
+    gap: 8px;
+}
+
+.PasswordInputContainer {
+    position: relative;
+    .HideIcon {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        margin: auto;
+    }
+}

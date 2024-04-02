@@ -1,0 +1,68 @@
+.InfoContainer {
+    position: relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 82.28%, #000 112.41%), linear-gradient(0deg, rgba(0, 0, 0, 0.05) 50.84%, #000 112.9%), rgba(0, 0, 0, 0.8);
+    &DetailsParent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 15%;
+        bottom: 0;
+        margin: auto;
+        gap: 57px;
+        width: calc(85% - 57px);
+        .Details {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 40%;
+            gap: 2%;
+            img {
+                width: 94px;
+                height: 4px;
+            }
+        }
+    }
+}
+
+.Bg {
+    width: 100%;
+}
+
+.Token {
+    width: 390px;
+    height: 390px;
+}
+
+.InfoContainerDetailsParent {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .InfoContainerDetailsParent {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .Token {
+        width: 148px;
+        height: 148px;
+    }
+    .Details {
+        align-items: center;
+        text-align: center;
+        width: 100% !important;
+    }
+    .description {
+        margin-top: 16px;
+    }
+    .Title {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 540px) {
+    .InfoContainerDetailsParent {
+        top: 60%;
+    }
+}

@@ -1,0 +1,44 @@
+
+
+.ButtonsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+    gap: 8px;
+}
+
+.Button {
+    display: flex;
+    cursor: pointer;
+    height: 48px;
+    .Icon {
+        width: 48px;
+        height: 48px;
+    }
+    &Details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+        width: 100%;
+    }
+}
+
+.ButtonContainer {
+    margin-top: 24px;
+    div {
+        text-align: center;
+    }
+}
+
+.PoweredByContainer {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.ButtonDetails {
+  border: 1px solid #2D2D2D;
+}

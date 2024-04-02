@@ -1,0 +1,50 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 84px 0;
+}
+
+.DetailsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    img {
+        width: 510px;
+        height: 392px;
+    }
+    .Details {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 476px;
+        div {
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .DetailsContainer {
+        flex-direction: column;
+        gap: 24px;
+        img {
+            width: 212px;
+            height: 212px;
+        }
+        .Details {
+            width: 280px;
+            div {
+                text-align: center;
+            }
+            button {
+                width: 100% !important;
+            }
+        }
+    }
+    .Container {
+        padding: 40px 44px;
+    }
+}

@@ -1,0 +1,24 @@
+.SocialIconContainer {
+    position: relative;
+    height: 72px;
+    width: 72px;
+    .Icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .SocialIconContainer, .SocialIconContainer > img {
+        width: 32px;
+        height: 32px;
+    }
+    .Icon {
+        width: 16px !important;
+        height: 16px !important;
+    }
+}

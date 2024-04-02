@@ -1,0 +1,46 @@
+.Container {
+    padding: 84px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.TokenomicsItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 154px;
+}
+
+.TitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.TokenomicsItem {
+    width: 389px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    img {
+        width: 271px;
+        height: 264px;
+    }
+    div {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .TokenomicsItems {
+        gap: 32px;
+    }
+    .TokenomicsItem {
+        gap: 24px;
+    }
+}

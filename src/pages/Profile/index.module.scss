@@ -1,0 +1,79 @@
+.Line {
+    background: #2D2D2D;
+    height: 1px;
+    width: 100%;
+}
+
+.Form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    padding-bottom: 24px;
+}
+
+.ProfileContainer {
+    padding: 84px 275px;
+    background: #000000;
+}
+
+.MessageTextBottom {
+    display: none;
+    text-align: center;
+}
+
+.UserContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.Profile {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.TitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Actions {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.Action {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .ProfileContainer {
+        padding: 24px;
+    }
+    .MessageTextBottom {
+        display: block;
+    }
+    .MessageTextTop {
+        display: none;
+    }
+    .UserContainer, .Action {
+        gap: 12px;
+    }
+    .Profile, .Actions {
+        gap: 24px;
+    }
+    .SmallTitle {
+        font-size: 16px;
+        text-align: center;
+    }
+}

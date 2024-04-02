@@ -1,0 +1,219 @@
+.Container {
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    padding: 84px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 256px;
+    position: relative;
+    width: 100%;
+}
+
+.MobileImage {
+    display: none;
+}
+
+.UseKompeteContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 104px;
+}
+
+.UseKompeteTitle {
+    text-align: left;
+}
+
+.InfoContainer {
+    padding-left: 162px;
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 44px;
+}
+
+.token1 {
+    position: absolute;
+    left: 0;
+    top: -6%;
+}
+
+.token2 {
+    position: absolute;
+    top: 13%;
+    left: 35%;
+}
+
+.token3 {
+    position: absolute;
+    top: 4%;
+    right: 10%;
+}
+
+.token4 {
+    position: absolute;
+    left: 22%;
+    top: -15%;
+}
+
+.token5 {
+    position: absolute;
+    right: 15%;
+    top: 0;
+}
+
+.GainExclusiveDetailsContainer {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    width: 100%;
+}
+
+.TitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.GainExclusiveAccessContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.GainExclusiveAccessTitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.WhitepaperTitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.WhitepaperDetails {
+    position: relative;
+    display: flex;
+    width: 650px;
+    min-height: 440px;
+    padding: 64px 84px 44px 84px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 260px;
+    background: white;
+    div {
+        color: #000000;
+    }
+}
+
+.StepContainer {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.Book {
+    width: 465px;
+    height: 256px;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.WhitepaperReadButton {
+    width: 212px;
+}
+
+.DetailsElements {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+@media (max-width: 1024px) {
+    .InfoContainer {
+        padding-left: 0;
+        align-items: center;
+        div {
+            text-align: center;
+        }
+    }
+    .Container {
+        padding: 116px 0;
+        gap: 32px;
+    }
+    .token1 {
+        width: 105px;
+        height: 130px;
+        top: -1%;
+        left: -2%;
+    }
+    .token2 {
+        width: 31px;
+        height: 31px;
+        top: 2.5%;
+        left: 41%;
+    }
+    .token3 {
+        width: 58px;
+        height: 47px;
+        top: 0.5%;
+        right: 4%;
+    }
+    .MobileImage {
+        display: block;
+    }
+    .Wheapon {
+        width: 100%;
+    }
+    .WhitepaperButtonTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Image, .token4, .token5 {
+        display: none;
+    }
+    .UseKompeteContainer {
+        flex-direction: column;
+        gap: 0;
+    }
+    .desc {
+        width: 95%;
+    }
+    .WhitepaperDescription {
+        text-align: center;
+    }
+    .GainExclusiveAccessContainer {
+        padding: 24px;
+    }
+    .GainExclusiveDetailsContainer {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .Book {
+        width: 247.031px;
+        height: 136px;
+        top: -27%;
+    }
+    .WhitepaperDetails {
+        width: 327px;
+        min-height: 300px;
+        margin-top: 140px;
+        padding: 48px 25px 24px 25px;
+        gap: 24px;
+    }
+}

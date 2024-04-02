@@ -1,0 +1,61 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding: 84px 0;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.ElementsContainer {
+    justify-content: center;
+    gap: 104px;
+}
+
+.ElementContainer {
+    width: 248px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    button {
+        width: 100%;
+    }
+}
+
+.TokenImage {
+    width: 152px;
+}
+
+.TitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.Button {
+    height: 70px !important;
+}
+
+.line {
+    width: 88px;
+    height: 4px;
+}
+
+@media (max-width: 1024px) {
+    .TokenImage {
+        width: 40px;
+        height: 40px;
+    }
+    .ElementContainer {
+        width: 100px;
+        gap: 16px;
+    }
+    .ElementsContainer {
+        gap: 9px;
+    }
+    .Container {
+        gap: 32px;
+    }
+}
